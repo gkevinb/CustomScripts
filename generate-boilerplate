@@ -1,0 +1,27 @@
+#!/bin/bash
+# Generate folders for web development
+
+# Initialize git
+git init
+
+# Initialize project, creates package.json, Install gulp and gulp-sass
+npm init
+npm install gulp --save-dev
+npm install gulp-sass --save-dev
+
+# Create directories app and dist
+mkdir app
+mkdir dist
+
+cd app
+
+# Create directories in app
+mkdir css
+mkdir scss
+mkdir js
+mkdir img
+
+# Crete files
+touch index.html
+touch gulpfile.js
+touch .gitignore
