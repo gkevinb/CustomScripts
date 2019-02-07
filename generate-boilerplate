@@ -2,18 +2,34 @@
 # Generate folders for web development
 
 # Initialize git
-git init
+# git init
+# CLONE from github first
+
+touch .gitignore
 
 # Initialize project, creates package.json, Install gulp and gulp-sass
 npm init
+
+# Setup gulp dev environment
 npm install gulp --save-dev
 npm install gulp-sass --save-dev
+npm install gulp-imagemin --save-dev
+npm install gulp-uglify --save-dev
+npm install gulp-concat --save-dev
+npm install browser-sync --save-dev
+
+touch gulpfile.js
+
+# Create docker files
+touch Dockerfile
+touch docker-compose.yml
+
 
 # Create directories app and dist
-mkdir app
+mkdir src
 mkdir dist
 
-cd app
+cd src
 
 # Create directories in app
 mkdir css
@@ -21,7 +37,5 @@ mkdir scss
 mkdir js
 mkdir img
 
-# Crete files
+# Create files
 touch index.html
-touch gulpfile.js
-touch .gitignore
