@@ -1,0 +1,37 @@
+#!/bin/bash
+# Generate vue component with HTML CSS and JavaScript in separate files
+
+COMPONENT_NAME=$1
+echo Generating Vue component: $COMPONENT_NAME
+
+# rm -rf $COMPONENT_NAME
+
+# Create component directory and navigate inside
+mkdir $COMPONENT_NAME
+cd $COMPONENT_NAME
+
+# Create files
+touch $COMPONENT_NAME.vue
+touch $COMPONENT_NAME.html
+touch $COMPONENT_NAME.scss
+touch $COMPONENT_NAME.js
+
+# Populate JavaScript file
+echo 'export default {
+    name: "'$COMPONENT_NAME'",
+    data() {
+        return {
+        };
+    },
+    created() {
+
+    },
+    methods: {
+
+    }
+};' >> $COMPONENT_NAME.js
+
+# Populate vue file
+echo '<template src="./'$COMPONENT_NAME'.html"></template>
+<style src="./'$COMPONENT_NAME'.scss" lang="scss"></style>
+<script src="./'$COMPONENT_NAME'.js"></script>' >> $COMPONENT_NAME.vue
