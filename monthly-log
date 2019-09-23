@@ -1,0 +1,23 @@
+#!/usr/bin/env python
+
+import calendar
+import sys
+
+def get_day_of_the_week(number):
+    days = ['M', 'T', 'W', 'T', 'F', 'S', 'S']
+    return days[number]
+
+
+# input 
+month = int(sys.argv[1])
+year = int(sys.argv[2])
+
+# year = 2019
+# month = 10
+
+firstDayOfTheMonth, numberOfDays = calendar.monthrange(year, month)
+
+j = firstDayOfTheMonth
+for date in range(1, numberOfDays + 1):
+    print(str(date) + get_day_of_the_week(j % 7))
+    j += 1
