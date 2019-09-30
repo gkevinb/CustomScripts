@@ -1,7 +1,0 @@
-#!/bin/bash
-# A sample Bash script to print out Hello World! and current directory
-
-echo Hello World!
-
-pwd
-
