@@ -4,13 +4,21 @@ This repository holds custom bash scripts I created to make my workflow more pro
 
 ## Commands
 
-### hello-world
+### monthly-log
 
-Simply `echo`'s `Hello World!` to the terminal.
+Generates monthly log
 
-### generate-boilerplate
+#### Arguments
 
-Old command to generate boilerplate files for web developement. It is now obsolete.
+- Month
+- Year
+
+#### Example
+
+```bash
+monthly-log 10 2019
+```
+
 
 ### vue-comp
 
@@ -22,12 +30,6 @@ Generates files and contents for VueJS compenent. Makes separate folder, with th
 
 #### Example
 
-``` bash
+```bash
 vue-comp Footer
 ```
-
-## Future Ideas
-
-Create Github Pages project page for this to display commands and then internal algorithm
-
-Use [Highlights.js](https://highlightjs.org/)
