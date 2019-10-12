@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/zsh
 # Generate vue component with HTML CSS and JavaScript in separate files
 
 COMPONENT_NAME=$1
